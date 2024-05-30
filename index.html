@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO Do List</title>
+    <link rel="icon"  href="./resources/todo_icon.ico" />
+    <link rel="stylesheet" href="./style.css">
+    <Script src="index.js"></Script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="heading-container">
+            <h1 id="heading">TO-DO-LIST </h1>
+            <p id="developer"><i>Develop By : K M Yeaser Arafat</i></p>
+        </div>
+        <div class="container-time">
+            <h3 id="timeDate"><script>ShowTimeDate();</script></h3>
+        </div>
+        <div class="container-heading">
+            <img id="logo" src="./resources/to-do-list.png">
+            <h2 id="heading-text">Manage To-Do List : </h2>
+        </div>
+
+        <div class="container-search-panel">
+            <input type="text" id="searchBox">
+            <button id="btn-Add-Schedule">ADD Schedule<script>AddNote()</script></button>
+        </div>
+
+        <div class="container-showList">
+            <ul id="list-Container">
+                <script>Remove()</script>
+                <!-- <li class="Note">Note-1</li> -->
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- <script>
+        function AddData(){
+            document.getElementById('btn-Add-Schedule').addEventListener('click', function(event){
+            var parentContainer  = document.getElementById('list-Container');
+            var newItem  = document.createElement('li');
+            newItem.innerText = prompt("Write Something : ");
+            parentContainer.appendChild(newItem);
+        })
+        }
+
+        document.getElementById('list-Container').addEventListener('click',function(event){
+            event.target.parentNode.removeChild(event.target);
+        })
+    </script> -->
+</body>
+</html>
